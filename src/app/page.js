@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -22,10 +23,10 @@ export default function Home() {
           className="flex items-center justify-between p-6 lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
+            <Link href="/signup" className="-m-1.5 p-1.5">
               <span className="sr-only">fronteer</span>
               <p className="text-3xl text-white">fronteer</p>
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             <button
@@ -49,12 +50,13 @@ export default function Home() {
             ))}
           </div> */}
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button
+            <Link
+              href="/signup"
               type="button"
               className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
               Join Waitlist
-            </button>
+            </Link>
           </div>
         </nav>
         <Dialog
@@ -95,12 +97,13 @@ export default function Home() {
                   ))}
                 </div>
                 <div className="py-6">
-                  <button
+                  <Link
+                    href="/signup"
                     type="button"
                     className="rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
                     Join Waitlist
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -140,12 +143,13 @@ export default function Home() {
               dream job! Built from real interview experience not theory
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <button
+              <Link
+                href="/signup"
                 type="button"
                 className="rounded-md bg-indigo-600 px-6 py-4 text-lg font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Join Waitlist
-              </button>
+              </Link>
 
               {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
                 Learn more <span aria-hidden="true">→</span>
