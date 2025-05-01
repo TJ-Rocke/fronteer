@@ -1,7 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { initMixpanel } from "./lib/mixpanel";
+import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
@@ -15,11 +14,6 @@ const navigation = [
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  // initialize Mixpanel
-  useEffect(() => {
-    initMixpanel(); // Initialize Mixpanel
-  }, []);
   return (
     <div className="bg-gray-950 h-full w-full">
       <header className="absolute inset-x-0 top-0 z-50">

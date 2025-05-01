@@ -1,5 +1,6 @@
 import { Concert_One } from "next/font/google";
 import "./globals.css";
+import MixpanelInit from "@/components/MixpanelInit";
 
 const concertOne = Concert_One({
   subsets: ["latin"],
@@ -20,7 +21,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${concertOne.variable} antialiased`}>{children}</body>
+      <body className={`${concertOne.variable} antialiased`}>
+        <MixpanelInit />
+        {children}
+      </body>
     </html>
   );
 }
