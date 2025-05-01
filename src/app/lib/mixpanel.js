@@ -1,4 +1,4 @@
-// import mixpanel class from the library
+// import mixpanel class from the library - env edit
 import mixpanel from "mixpanel-browser";
 
 const MIXPANEL_TOKEN = process.env.NEXT_PUBLIC_MIXPANEL_PROJECT_TOKEN;
