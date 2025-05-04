@@ -148,8 +148,8 @@ export default function ContactForm() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          firstName: formData.firstName,
-          lastName: formData.lastName,
+          "first-name": formData.firstName,
+          "last-name": formData.lastName,
           email: formData.email,
           "g-recaptcha-response": recaptchaToken,
         }),
