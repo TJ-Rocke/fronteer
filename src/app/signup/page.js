@@ -121,9 +121,10 @@
 
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import GoogleReCaptcha from "@/components/GoogleReCaptcha";
+import { useRouter } from "next/navigation";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -134,6 +135,13 @@ export default function ContactForm() {
 
   const [status, setStatus] = useState("idle");
   const [recaptchaToken, setRecaptchaToken] = useState("");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (status === "succeeded") {
+      router.push("/signup/success");
+    }
+  }, [status, router]);
 
   const handleCustomSubmit = async (e) => {
     e.preventDefault();
@@ -180,11 +188,11 @@ export default function ContactForm() {
     }
   };
 
-  if (status === "succeeded") {
-    return (
-      <p className="text-white text-center text-2xl">Thanks for joining!</p>
-    );
-  }
+  // if (status === "succeeded") {
+  //   return (
+  //     <p className="text-white text-center text-2xl">Thanks for joining!</p>
+  //   );
+  // }
 
   return (
     <div className="isolate bg-gray-950 px-6 py-24 sm:py-18 lg:px-8">

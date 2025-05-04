@@ -17,8 +17,7 @@ export default function Success() {
             You successfully joined!
           </h1>
           <p className="mt-6 text-pretty text-lg font-medium text-gray-100 sm:text-xl/8">
-            Thanks for joining! We will reach out shortly with a link to our
-            Discord!
+            Thanks for joining! You will receive an email from Thomas soon.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
