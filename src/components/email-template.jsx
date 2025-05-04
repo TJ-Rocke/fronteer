@@ -11,8 +11,7 @@ export const EmailTemplate = ({ firstName }) => (
       <br />
       I'm starting Fronteer because I struggle to prepare for Frontend
       interviews. Just having a simple and effective process that{" "}
-      <i>just works</i>. I think putting together the right community and tools
-      can make that happen.
+      <i>just works</i>.
       <br />
       <br />
       <b>PS: Why did you sign up? What brought you here?</b>
