@@ -188,12 +188,6 @@ export default function ContactForm() {
     }
   };
 
-  // if (status === "succeeded") {
-  //   return (
-  //     <p className="text-white text-center text-2xl">Thanks for joining!</p>
-  //   );
-  // }
-
   return (
     <div className="isolate bg-gray-950 px-6 py-24 sm:py-18 lg:px-8">
       <div

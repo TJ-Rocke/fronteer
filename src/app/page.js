@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import TestimonialSection from "@/components/TestimonialSection";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -141,6 +142,7 @@ export default function Home() {
               Master the skills real frontend interviews test and land your
               dream job! Built from real interview experience not theory
             </p>
+            {/* Join Waitlist button */}
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/signup"
@@ -156,6 +158,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+
         {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
@@ -169,6 +172,8 @@ export default function Home() {
           />
         </div> */}
       </div>
+      {/* Testimonial Section */}
+      <TestimonialSection />
     </div>
   );
 }
