@@ -8,8 +8,11 @@ export const EmailTemplate = ({ firstName }) => (
       <br />
       My name is Thomas — I'm the creator of Fronteer.
       <br />
-      <br />I started Fronteer because I struggled to prepare for Frontend
-      interviews. A simple and effective process that <i>just works</i>.
+      <br />
+      I'm starting Fronteer because I struggle to prepare for Frontend
+      interviews. Just having a simple and effective process that{" "}
+      <i>just works</i>. I think putting together the right community and tools
+      can make that happen.
       <br />
       <br />
       <b>PS: Why did you sign up? What brought you here?</b>
