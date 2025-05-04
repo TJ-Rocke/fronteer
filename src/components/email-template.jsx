@@ -5,6 +5,7 @@ export const EmailTemplate = ({ firstName }) => (
     <p>
       Hey {firstName},
       <br />
+      <br />
       My name is Thomas — I'm the creator of Fronteer.
       <br />
       <br />I started Fronteer because I struggled to prepare for Frontend
